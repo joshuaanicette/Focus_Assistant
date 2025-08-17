@@ -186,7 +186,8 @@ Then open in your browser:
 
 
 ## Circuit View
-<img width="1426" height="730" alt="Screenshot 2025-08-17 124335" src="https://github.com/user-attachments/assets/6ca42dde-b9fa-4bef-80ca-0a63378184ea" /> 
+<img width="1403" height="663" alt="Screenshot 2025-08-17 135600" src="https://github.com/user-attachments/assets/e0da147f-444e-4ae5-876a-15ac83e1618d" />
+ 
 
 
 
@@ -194,6 +195,7 @@ Then open in your browser:
 
 
 ## Schematic View
-<img width="1033" height="812" alt="Screenshot 2025-08-17 134049" src="https://github.com/user-attachments/assets/feaee3c7-860f-46db-b5d9-679565bf419f" />
+<img width="1002" height="777" alt="Screenshot 2025-08-17 135654" src="https://github.com/user-attachments/assets/27dcbc90-9dbc-48e9-a56f-f4fc5a0d0deb" />
+
 
 
