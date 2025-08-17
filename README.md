@@ -91,4 +91,85 @@ pip3 install pyserial pandas flask requests
 mkdir focus_assistant
 cd focus_assistant
 nano focus_app.py
+- After finishing your code press Crtl + X, then press Y to save the file, and lastly press Crtl + X to escape fromn the from the text editor
+
+### Combined App (`focus_app.py`)
+- Reads Arduino serial → appends to `focus_log.csv`.
+- Optional sound via `aplay` if `alert.wav` exists.
+- Optional desktop toast via `notify-send`.
+- Flask server on port **8080**.
+- Endpoints:
+  - `/stats` → JSON summary
+  - `/download` → CSV download
+  - `/` → live dashboard in browser
+
+---
+
+## 7. Running the Project
+
+1. Wire components as shown in Section 4.  
+2. Upload Arduino sketch via **Arduino IDE**.  
+3. Connect Arduino → Pi via USB.  
+4. On Raspberry Pi, run:
+
+```bash
+python3 focus_app.py
+
+# 🔧 Focus Assistant – Testing, Results & Quick Start
+
+## Open Browser
+After running the app, open your browser at:
+- http://<your-pi-ip>:8080
+
+---
+
+## 8. Testing & Calibration
+
+### Calibrate Distance Threshold
+- Sit at desk → note reading (25–40 cm typical).
+- Set `PRESENT_CM` ~10–15 cm higher (e.g., 50 cm).
+
+### Check LEDs
+- **Present** → 🟢 Green  
+- **Away 2–5 min** → 🔵 Blue  
+- **Away >5 min** → 🔴 Flashing Red  
+
+### Check Buzzer
+- **Short beep** → Warning  
+- **Triple beep** → Distracted  
+
+### Verify Logging
+```bash
+tail -f focus_log.csv
+
+Dashboard View
+
+- Displays total focus minutes
+
+- Tracks away minutes
+
+- Logs event counts
+
+9. Results
+
+     ✅ Automatic focus tracking via ultrasonic sensor.
+
+     ✅ Real-time feedback (LED + buzzer) reduced long distractions.
+
+     ✅ CSV log + dashboard provided daily summaries.
+
+     ✅ Built with only Arduino Mega + Raspberry Pi 4 + starter kit.
+
+10. Future Improvements
+
+     ⏱️ Add Pomodoro mode (25/5 timers).
+
+     📟 Add LCD/OLED countdown display.
+
+     💾 Use SQLite for long-term analytics.
+
+     📱 Add Telegram/phone alerts.
+
+     🔒 Auto-lock screen when distracted too long.
+
 
