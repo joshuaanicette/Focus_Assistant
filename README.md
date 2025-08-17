@@ -83,5 +83,12 @@ The Arduino:
 ```bash
 sudo apt update
 sudo apt install -y python3-pip alsa-utils libnotify-bin
-
+sudo apt install python3-venv -y
+python -m venv venv
+- venv is the name of the virtual environment folder (you can name it anything)
+source venv/bin/activate
 pip3 install pyserial pandas flask requests
+mkdir focus_assistant
+cd focus_assistant
+nano focus_app.py
+
