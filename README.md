@@ -83,4 +83,5 @@ The Arduino:
 ```bash
 sudo apt update
 sudo apt install -y python3-pip alsa-utils libnotify-bin
+
 pip3 install pyserial pandas flask requests
