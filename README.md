@@ -187,4 +187,3 @@ Then open in your browser:
 
 ## 📷 Demo<img width="1426" height="730" alt="Screenshot 2025-08-17 124335" src="https://github.com/user-attachments/assets/6ca42dde-b9fa-4bef-80ca-0a63378184ea" />
 
-[focus_assistant_log.pdf](https://github.com/user-attachments/files/21823627/focus_assistant_log.pdf)
